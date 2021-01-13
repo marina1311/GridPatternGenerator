@@ -175,7 +175,7 @@
     };
     
     // TODO ideally, we'd want everything to go through this function instead of Util.Bounds,
-    // but would require further work to calculate the correct positions for elements with offsetParents
+    // but would require further work to calculate the correct positions for elements with offsetParents for real
     _html2canvas.Util.OffsetBounds = function (element) {
       var parent = element.offsetParent ? _html2canvas.Util.OffsetBounds(element.offsetParent) : {top: 0, left: 0};
     
